@@ -453,6 +453,8 @@
 /(vendor|odm)/lib(64)?/android\.hardware\.camera\.device-V2-ndk\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/rfsa/adsp/libarcsoft_hdrplus_hvx_skel\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_lemonade\.so    u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/libAncHumanDoubleExposure\.so    u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/libnpu\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libarcsoft_dualcam_refocus_frt_preview\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/rfsa/adsp/libvdsuperphoto_3\.12\.30_skel\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/rfsa/adsp/libarcsoft_psn_hvx_5221_skel\.so    u:object_r:same_process_hal_file:s0
