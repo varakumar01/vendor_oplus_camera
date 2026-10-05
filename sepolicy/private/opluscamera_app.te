@@ -1,5 +1,8 @@
 # Same access as platform_app, the domain the camera ran in before.
 
+app_domain(opluscamera_app)
+net_domain(opluscamera_app)
+
 # Access to /data/media.
 allow opluscamera_app media_rw_data_file:dir create_dir_perms;
 allow opluscamera_app media_rw_data_file:file create_file_perms;
