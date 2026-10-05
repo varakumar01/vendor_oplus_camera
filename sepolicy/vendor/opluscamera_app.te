@@ -21,3 +21,6 @@ get_prop(opluscamera_app, vendor_mpctl_prop)
 allow opluscamera_app vendor_hal_camera_postproc_hwservice:hwservice_manager find;
 binder_call(opluscamera_app, hal_camera_default)
 binder_call(hal_camera_default, opluscamera_app)
+
+# Osense
+hal_client_domain(opluscamera_app, vendor_hal_oplus_osense)
