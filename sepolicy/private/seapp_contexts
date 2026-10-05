@@ -1,2 +1,2 @@
 # Camera
-user=_app seinfo=oplus_app name=com.oplus.camera domain=opluscamera_app type=app_data_file
+user=_app seinfo=platform name=com.oplus.camera domain=opluscamera_app type=app_data_file levelFrom=user

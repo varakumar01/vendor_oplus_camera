@@ -1,1 +1,1 @@
-type opluscamera_app, domain, mlstrustedsubject;
+type opluscamera_app, domain, coredomain;

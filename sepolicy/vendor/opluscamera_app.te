@@ -11,3 +11,8 @@ allow opluscamera_app vendor_xdsp_device:chr_file r_file_perms;
 allow opluscamera_app vendor_camera_data_file:dir create_dir_perms;
 allow opluscamera_app vendor_camera_data_file:file create_file_perms;
 r_dir_file(opluscamera_app, vendor_persist_camera_file)
+
+# Same vendor HAL access as platform_app
+hal_client_domain(opluscamera_app, vendor_hal_perf)
+hal_client_domain(opluscamera_app, vendor_hal_qspmhal)
+get_prop(opluscamera_app, vendor_mpctl_prop)
