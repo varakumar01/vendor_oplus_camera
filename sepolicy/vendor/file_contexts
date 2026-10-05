@@ -306,6 +306,8 @@
 /(vendor|odm)/lib(64)?/libarcsoft_superportrait\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/rfsa/adsp/libdehaze_skel\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/liboneplus_dehaze_module\.so    u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/liboplus_dehaze_module\.so    u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/libVDBayerHDR\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libPreviewAlgo\.starburst\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libarcsoft_hdr_couple_api\.so    u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/libOPAlgoCamFaceBeautyCap\.so    u:object_r:same_process_hal_file:s0
