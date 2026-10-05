@@ -16,3 +16,8 @@ r_dir_file(opluscamera_app, vendor_persist_camera_file)
 hal_client_domain(opluscamera_app, vendor_hal_perf)
 hal_client_domain(opluscamera_app, vendor_hal_qspmhal)
 get_prop(opluscamera_app, vendor_mpctl_prop)
+
+# Hardware JPEG encoder (IPostProcService in the camera provider)
+allow opluscamera_app vendor_hal_camera_postproc_hwservice:hwservice_manager find;
+binder_call(opluscamera_app, hal_camera_default)
+binder_call(hal_camera_default, opluscamera_app)
