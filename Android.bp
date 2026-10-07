@@ -1148,9 +1148,6 @@ android_app_import {
         "GoogleCameraGo",
     ],
     certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
     privileged: true,
     system_ext_specific: true,
 }

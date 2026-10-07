@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+from pathlib import Path
+
 from extract_utils.fixups_lib import (
     lib_fixups,
     lib_fixups_user_type,
@@ -39,3 +42,16 @@ module = ExtractUtilsModule(
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
     utils.run()
+
+    # extract-utils turns dexpreopt off for every APK. OplusCamera is compiled
+    # at build time (PRODUCT_DEXPREOPT_SPEED_APPS in opluscamera.mk).
+    bp = Path(__file__).with_name('Android.bp')
+    bp.write_text(
+        re.sub(
+            r'(name: "OplusCamera",.*?)    dex_preopt: \{\n        enabled: false,\n    \},\n',
+            r'\1',
+            bp.read_text(),
+            count=1,
+            flags=re.S,
+        )
+    )
