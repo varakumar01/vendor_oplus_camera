@@ -275,6 +275,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libApsSuperEISPreviewJni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libApsSuperEISPreviewJni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv3",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libAvatarEngineRender",
     owner: "oplus",
     strip: {
@@ -403,11 +434,39 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libFileExtender-jni.so",
             ],
             shared_libs: [
-                "libextendfile",
+                "libextendfile_system_ext",
                 "liblog",
                 "libandroid",
                 "libEGL",
                 "libGLESv3",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHdrTransform-platform-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libHdrTransform-platform-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libjnigraphics",
                 "libc",
                 "libm",
                 "libdl",
@@ -448,6 +507,33 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMsEffectSdk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libMsEffectSdk.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libandroid",
+                "libjnigraphics",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -504,6 +590,33 @@ cc_prebuilt_library_shared {
                 "libandroid",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusStringJNI",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libOplusStringJNI.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libstdc++",
                 "libdl",
             ],
         },
@@ -625,6 +738,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libarcsoft_panorama_burstcapture",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libarcsoft_panorama_burstcapture.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libarcsoft_wideselfie",
     owner: "oplus",
     strip: {
@@ -650,91 +787,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcolorx-loader",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcolorx-loader.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutilscallstack",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcolorx",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcolorx.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libutilscallstack",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcoolex",
-    owner: "oplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/lib64/libcoolex.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libcolorx",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libextendfile",
+    name: "libextendfile_system_ext",
+    stem: "libextendfile",
     owner: "oplus",
     strip: {
         none: true,
@@ -749,6 +803,35 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjni_burstpmk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjni_burstpmk.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+                "libmpbase_system_ext",
+                "libarcsoft_panorama_burstcapture",
             ],
         },
     },
@@ -786,6 +869,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjnisingleblur_api.qti",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjnisingleblur_api.qti.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libjnigraphics",
+                "libvndksupport",
+                "liblog",
+                "libGLESv2",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libjnisingleblur_api",
     owner: "oplus",
     strip: {
@@ -814,33 +926,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libjnisingleblur_api.qti",
-	owner: "oplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libjnisingleblur_api.qti.so"],
-			shared_libs: [
-            "libz",
-            "libjnigraphics",
-            "libvndksupport",
-            "liblog",
-            "libGLESv2",
-            "libm",
-            "libdl",
-            "libc",
-            ],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjnistblur_api",
     owner: "oplus",
     strip: {
@@ -860,6 +945,35 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblivephoto.frc.jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liblivephoto.frc.jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libmpbase_system_ext",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libnativewindow",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

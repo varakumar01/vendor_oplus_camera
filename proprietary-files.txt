@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Oneplus 11 5G (CPH2449_14.0.0.401(EX01)).
+## are from the OxygenOS 16 port for the OnePlus 9 (LE2113_16.0.10.500(EX01)).
 
 # Camera
 my_product/app/OplusCamera/OplusCamera.apk:system_ext/priv-app/OplusCamera/OplusCamera.apk;OVERRIDES=Aperture,Camera2,GoogleCameraGo
@@ -12,25 +12,29 @@ my_product/lib64/libAncHumanRetain-jni_v2.so:system_ext/lib64/libAncHumanRetain-
 my_product/lib64/libAncHumanSegFigureFusion-jni.so:system_ext/lib64/libAncHumanSegFigureFusion-jni.so
 my_product/lib64/libAncHumanVideo-jni.so:system_ext/lib64/libAncHumanVideo-jni.so
 my_product/lib64/libApsFaceBeautyPreviewProductJni.so:system_ext/lib64/libApsFaceBeautyPreviewProductJni.so;FIX_SONAME
+my_product/lib64/libApsSuperEISPreviewJni.so:system_ext/lib64/libApsSuperEISPreviewJni.so
 my_product/lib64/libAvatarEngineRender.so:system_ext/lib64/libAvatarEngineRender.so
 my_product/lib64/libAvatarEngineRenderNative.so:system_ext/lib64/libAvatarEngineRenderNative.so
 my_product/lib64/libCombineLut.so:system_ext/lib64/libCombineLut.so
 my_product/lib64/libCombineLutJni.so:system_ext/lib64/libCombineLutJni.so
 my_product/lib64/libFileExtender-jni.so:system_ext/lib64/libFileExtender-jni.so
+my_product/lib64/libHdrTransform-platform-jni.so:system_ext/lib64/libHdrTransform-platform-jni.so
+my_product/lib64/libMsEffectSdk.so:system_ext/lib64/libMsEffectSdk.so
 my_product/lib64/libOplusBlurPreviewJNI.so:system_ext/lib64/libOplusBlurPreviewJNI.so
+my_product/lib64/libOplusStringJNI.so:system_ext/lib64/libOplusStringJNI.so
 my_product/lib64/libSuperTextWrapper.so:system_ext/lib64/libSuperTextWrapper.so;MODULE_SUFFIX=_system_ext
 my_product/lib64/libXDocProcessSDK-jni.so:system_ext/lib64/libXDocProcessSDK-jni.so
 my_product/lib64/libXDocProcessSDK.so:system_ext/lib64/libXDocProcessSDK.so;MODULE_SUFFIX=_system_ext
 my_product/lib64/libYTCommon.so:system_ext/lib64/libYTCommon.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libarcsoft_panorama_burstcapture.so:system_ext/lib64/libarcsoft_panorama_burstcapture.so
 my_product/lib64/libarcsoft_wideselfie.so:system_ext/lib64/libarcsoft_wideselfie.so
-my_product/lib64/libcolorx-loader.so:system_ext/lib64/libcolorx-loader.so
-my_product/lib64/libcolorx.so:system_ext/lib64/libcolorx.so
-my_product/lib64/libcoolex.so:system_ext/lib64/libcoolex.so
-my_product/lib64/libextendfile.so:system_ext/lib64/libextendfile.so
+my_product/lib64/libextendfile.so:system_ext/lib64/libextendfile.so;MODULE_SUFFIX=_system_ext
+my_product/lib64/libjni_burstpmk.so:system_ext/lib64/libjni_burstpmk.so
 my_product/lib64/libjni_wideselfie.so:system_ext/lib64/libjni_wideselfie.so
-my_product/lib64/libjnisingleblur_api.so:system_ext/lib64/libjnisingleblur_api.so;FIX_SONAME
 my_product/lib64/libjnisingleblur_api.so:system_ext/lib64/libjnisingleblur_api.qti.so;DISABLE_CHECKELF
+my_product/lib64/libjnisingleblur_api.so:system_ext/lib64/libjnisingleblur_api.so;FIX_SONAME
 my_product/lib64/libjnistblur_api.so:system_ext/lib64/libjnistblur_api.so;FIX_SONAME
+my_product/lib64/liblivephoto.frc.jni.so:system_ext/lib64/liblivephoto.frc.jni.so
 my_product/lib64/libmpbase.so:system_ext/lib64/libmpbase.so;MODULE_SUFFIX=_system_ext
 my_product/lib64/libsingle_camera_bokeh_native.so:system_ext/lib64/libsingle_camera_bokeh_native.so
 my_product/lib64/libst_mobile.so:system_ext/lib64/libst_mobile.so

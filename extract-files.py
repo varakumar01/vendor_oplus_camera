@@ -24,6 +24,7 @@ lib_fixups: lib_fixups_user_type = {
         'libSuperTextWrapper',
         'libXDocProcessSDK',
         'libYTCommon',
+        'libextendfile',
         'libmpbase',
     ): lib_fixup_system_ext_suffix,
 }
