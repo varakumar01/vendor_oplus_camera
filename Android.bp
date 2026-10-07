@@ -1148,6 +1148,7 @@ android_app_import {
         "GoogleCameraGo",
     ],
     certificate: "platform",
+    enforce_uses_libs: false,
     privileged: true,
     system_ext_specific: true,
 }
