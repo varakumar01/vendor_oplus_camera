@@ -549,3 +549,5 @@
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3                                              u:object_r:public_adsprpcd_file:s0
+# APS job and Live Photo store
+/data/vendor/camera_process(/.*)?                                            u:object_r:vendor_oplus_camera_process_file:s0

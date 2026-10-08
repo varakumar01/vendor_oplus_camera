@@ -23,3 +23,7 @@ typeattribute opluscamera_app hal_camera_client;
 
 # Osense
 hal_client_domain(opluscamera_app, vendor_hal_oplus_osense)
+
+# APS job and Live Photo store
+allow opluscamera_app vendor_oplus_camera_process_file:dir create_dir_perms;
+allow opluscamera_app vendor_oplus_camera_process_file:file create_file_perms;
