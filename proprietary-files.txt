@@ -1,6 +1,10 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from the OxygenOS 16 port for the OnePlus 9 (LE2113_16.0.10.500(EX01)).
 
+# Camera - from OPPO Find X10 Pro Max (PMX110_17.0.0.105(CN01))
+my_product/app/OplusCamera/OplusCamera.apk:system_ext/priv-app/OplusCamera/OplusCamera.apk;OVERRIDES=Aperture,Camera2,GoogleCameraGo
+my_product/product_overlay/etc/permissions/oplus_camera_default_grant_permissions_list.xml:system_ext/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml
+
 # Camera
 system/framework/oplus-support-wrapper.jar
 system_ext/lib64/libHeifEncoderWrapper.so
