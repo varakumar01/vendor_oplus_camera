@@ -32,6 +32,7 @@
     <privapp-permissions package="com.oplus.camera">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE"/>
         <permission name="android.permission.SYSTEM_CAMERA"/>
         <permission name="android.permission.TURN_SCREEN_ON"/>
         <permission name="android.permission.UPDATE_DEVICE_STATS"/>
