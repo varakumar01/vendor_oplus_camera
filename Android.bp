@@ -30,6 +30,510 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAPSClient-alog-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAPSClient-alog-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libjnigraphics",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-cmd-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAPSClient-cmd-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libjnigraphics",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAPSClient-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAPSClient-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libjnigraphics",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncFilter_jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncFilter_jni.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumBokeh-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncHumBokeh-jni.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanDoubleExposure-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncHumanDoubleExposure-jni.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libandroid",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanRetain-jni_v2",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncHumanRetain-jni_v2.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libandroid",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanSegFigureFusion-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncHumanSegFigureFusion-jni.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libandroid",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAncHumanVideo-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAncHumanVideo-jni.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsAICompositionJni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libApsAICompositionJni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsFaceBeautyPreviewProductJni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libApsFaceBeautyPreviewProductJni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv3",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libApsSuperEISPreviewJni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libApsSuperEISPreviewJni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv3",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAvatarEngineRender",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAvatarEngineRender.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libandroid",
+                "libz",
+                "libGLESv3",
+                "libEGL",
+                "libstdc++",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAvatarEngineRenderNative",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libAvatarEngineRenderNative.so",
+            ],
+            shared_libs: [
+                "libAvatarEngineRender",
+                "liblog",
+                "libdl",
+                "libandroid",
+                "libz",
+                "libGLESv3",
+                "libEGL",
+                "libstdc++",
+                "libm",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCombineLut",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libCombineLut.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libCombineLutJni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libCombineLutJni.so",
+            ],
+            shared_libs: [
+                "libCombineLut",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libEGL",
+                "libGLESv1_CM",
+                "libGLESv3",
+                "libz",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFileExtender-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libFileExtender-jni.so",
+            ],
+            shared_libs: [
+                "libextendfile_system_ext",
+                "liblog",
+                "libandroid",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHdrTransform-platform-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libHdrTransform-platform-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libnativewindow",
+                "libjnigraphics",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libHeifEncoderWrapper",
     owner: "oplus",
     strip: {
@@ -58,6 +562,33 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMsEffectSdk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libMsEffectSdk.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libandroid",
+                "libjnigraphics",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -98,6 +629,466 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libOplusBlurPreviewJNI",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libOplusBlurPreviewJNI.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusStringJNI",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libOplusStringJNI.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libPalette-Jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libPalette-Jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libGLESv2",
+                "libEGL",
+                "libnativewindow",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libSuperTextWrapper_system_ext",
+    stem: "libSuperTextWrapper",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libSuperTextWrapper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libXDocProcessSDK_system_ext",
+                "libYTCommon_system_ext",
+                "libGLESv3",
+                "libEGL",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libXDocProcessSDK-jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libXDocProcessSDK-jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "liblog",
+                "libjnigraphics",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libXDocProcessSDK_system_ext",
+    stem: "libXDocProcessSDK",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libXDocProcessSDK.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libYTCommon_system_ext",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libz",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libYTCommon_system_ext",
+    stem: "libYTCommon",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libYTCommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libm",
+                "libstdc++",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_panorama_burstcapture",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libarcsoft_panorama_burstcapture.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarcsoft_wideselfie",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libarcsoft_wideselfie.so",
+            ],
+            shared_libs: [
+                "libmpbase_system_ext",
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libextendfile_system_ext",
+    stem: "libextendfile",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libextendfile.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjni_burstpmk",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjni_burstpmk.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+                "libmpbase_system_ext",
+                "libarcsoft_panorama_burstcapture",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjni_wideselfie",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjni_wideselfie.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "liblog",
+                "libandroid",
+                "libc",
+                "libm",
+                "libstdc++",
+                "libdl",
+                "libarcsoft_wideselfie",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjnisingleblur_api.qti",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjnisingleblur_api.qti.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libjnigraphics",
+                "libvndksupport",
+                "liblog",
+                "libGLESv2",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjnisingleblur_api",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjnisingleblur_api.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libjnigraphics",
+                "libvndksupport",
+                "liblog",
+                "libGLESv2",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjnistblur_api",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libjnistblur_api.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libjnigraphics",
+                "libvndksupport",
+                "liblog",
+                "libGLESv2",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblivephoto.frc.jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/liblivephoto.frc.jni.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libmpbase_system_ext",
+                "liblog",
+                "libandroid",
+                "libjnigraphics",
+                "libnativewindow",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmpbase_system_ext",
+    stem: "libmpbase",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmpbase.so",
+            ],
+            shared_libs: [
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liboplusheifwriter",
     owner: "oplus",
     strip: {
@@ -128,6 +1119,117 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsingle_camera_bokeh2_native",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsingle_camera_bokeh2_native.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libmpbase_system_ext",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsingle_camera_bokeh_native",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libsingle_camera_bokeh_native.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libmpbase_system_ext",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libst_mobile",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libst_mobile.so",
+            ],
+            shared_libs: [
+                "libz",
+                "libGLESv2",
+                "libEGL",
+                "liblog",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libst_sticker_jni",
+    owner: "oplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libst_sticker_jni.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libst_mobile",
+                "libandroid",
+                "libGLESv3",
+                "libEGL",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },

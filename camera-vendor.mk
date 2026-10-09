@@ -14,9 +14,49 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libpenguin \
+    libAPSClient-alog-jni \
+    libAPSClient-cmd-jni \
+    libAPSClient-jni \
+    libAncFilter_jni \
+    libAncHumBokeh-jni \
+    libAncHumanDoubleExposure-jni \
+    libAncHumanRetain-jni_v2 \
+    libAncHumanSegFigureFusion-jni \
+    libAncHumanVideo-jni \
+    libApsAICompositionJni \
+    libApsFaceBeautyPreviewProductJni \
+    libApsSuperEISPreviewJni \
+    libAvatarEngineRender \
+    libAvatarEngineRenderNative \
+    libCombineLut \
+    libCombineLutJni \
+    libFileExtender-jni \
+    libHdrTransform-platform-jni \
     libHeifEncoderWrapper \
+    libMsEffectSdk \
     libNativeWinBuffExchange \
+    libOplusBlurPreviewJNI \
+    libOplusStringJNI \
+    libPalette-Jni \
+    libSuperTextWrapper_system_ext \
+    libXDocProcessSDK-jni \
+    libXDocProcessSDK_system_ext \
+    libYTCommon_system_ext \
+    libarcsoft_panorama_burstcapture \
+    libarcsoft_wideselfie \
+    libextendfile_system_ext \
+    libjni_burstpmk \
+    libjni_wideselfie \
+    libjnisingleblur_api.qti \
+    libjnisingleblur_api \
+    libjnistblur_api \
+    liblivephoto.frc.jni \
+    libmpbase_system_ext \
     liboplusheifwriter \
+    libsingle_camera_bokeh2_native \
+    libsingle_camera_bokeh_native \
+    libst_mobile \
+    libst_sticker_jni \
     OplusAppPlatform \
     OplusCamera \
     oplus-support-wrapper \
