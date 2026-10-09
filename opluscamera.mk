@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.oplus.anim_level=2 \
     persist.vendor.camera.privapp.list=com.oplus.camera \
     ro.com.google.lens.oem_camera_package=com.oplus.camera \
     ro.com.google.lens.oem_image_package=com.oneplus.gallery
