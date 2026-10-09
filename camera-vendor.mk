@@ -19,4 +19,6 @@ PRODUCT_PACKAGES += \
     liboplusheifwriter \
     OplusAppPlatform \
     OplusCamera \
-    oplus-support-wrapper
+    oplus-support-wrapper \
+    com.oplus.camera.unit.sdk.adapter \
+    com.oplus.camera.unit.sdk
